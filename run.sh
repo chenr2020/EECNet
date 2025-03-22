@@ -2,7 +2,6 @@
 CUDA_VISIBLE_DEVICES=5 python test_demo.py \
     --data_dir ../ \
     --save_dir ./results \
-    --include_test \
     --model_id 47
 
 
