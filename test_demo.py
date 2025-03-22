@@ -172,7 +172,7 @@ def run(model, model_name, data_range, tile, logger, device, args, mode="test"):
         # print(os.path.join(save_path, img_name+ext))
             
         # --- Save Restored Images ---
-        # util.imsave(img_sr, os.path.join(save_path, img_name+ext))
+        #util.imsave(img_sr, os.path.join(save_path, img_name+ext))
 
     results[f"{mode}_memory"] = torch.cuda.max_memory_allocated(torch.cuda.current_device()) / 1024 ** 2
     results[f"{mode}_ave_runtime"] = sum(results[f"{mode}_runtime"]) / len(results[f"{mode}_runtime"]) #/ 1000.0
